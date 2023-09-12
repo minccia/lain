@@ -1,0 +1,99 @@
+html, body {
+  height: 100%;
+}
+
+.container {
+  margin: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+}
+
+.glitching_lain {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("./assets/lain.png") center;
+  }
+  
+.glitching_lain::before,
+.glitching_lain::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.glitching_lain::before {
+  animation: glitch-effect 6s infinite linear alternate-reverse;
+  background: url("./assets/blue_filter_lain.png") center;
+}
+
+.glitching_lain::after {
+  animation: glitch-effect 7s infinite linear alternate-reverse;
+  background: url("./assets/purple_filter_lain.png") center;
+}
+
+@keyframes glitch-effect {
+    0% {
+      clip: rect(841px, 1920px, 227px, 0);
+    }
+    6% {
+      clip: rect(170px, 1920px, 923px, 0);
+    }
+    12% {
+      clip: rect(398px, 1920px, 695px, 0);
+    }
+    18% {
+      clip: rect(56px, 1920px, 1037px, 0);
+    }
+    24% {
+      clip: rect(1511px, 1920px, 143px, 0);
+    }
+    30% {
+      clip: rect(1208px, 1920px, 446px, 0);
+    }
+    36% {
+      clip: rect(1311px, 1920px, 343px, 0);
+    }
+    42% {
+      clip: rect(656px, 1920px, 999px, 0);
+    }
+    48% {
+      clip: rect(926px, 1920px, 729px, 0);
+    }
+    54% {
+      clip: rect(1119px, 1920px, 536px, 0);
+    }
+    60% {
+      clip: rect(1568px, 1920px, 87px, 0);
+    }
+    66% {
+      clip: rect(402px, 1920px, 1253px, 0);
+    }
+    72% {
+      clip: rect(855px, 1920px, 800px, 0);
+    }
+    78% {
+      clip: rect(302px, 1920px, 1353px, 0);
+    }
+    84% {
+      clip: rect(101px, 1920px, 1554px, 0);
+    }
+    90% {
+      clip: rect(932px, 1920px, 723px, 0);
+    }
+    96% {
+      clip: rect(526px, 1920px, 1129px, 0);
+    }
+
+    100% {
+        clip: rect(0, 1920px, 1068px, 0);
+    }
+  }
