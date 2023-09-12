@@ -4,10 +4,10 @@ document.addEventListener('DOMContentLoaded', function() {
   const glitchingLain = document.querySelector('.glitching_lain')
 
   setTimeout(function() {
-    body.style.background = 'url("./assets/static.gif")';
+    body.classList.toggle('container_background_off')
 
     setTimeout(function() {
-      body.style.background = 'none';
+      body.classList.toggle('container_background_off')
       glitchingLain.style.display = 'block';
     }, 1000)
   }, 2200)

@@ -1,5 +1,6 @@
 html, body {
   height: 100%;
+  background: black
 }
 
 .container {
@@ -7,7 +8,12 @@ html, body {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  background-color: black;
+  transition: background 1s ease-in-out;
+  background: url("./assets/static.gif");
+}
+
+.container_background_off {
+  background: none;
 }
 
 .glitching_lain {
