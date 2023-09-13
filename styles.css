@@ -47,6 +47,11 @@ html, body {
   background: url("./assets/purple_filter_lain.png") center;
 }
 
+.television_lain {
+  margin: auto;
+  animation: shrinkAndFade 4s cubic-bezier(0.075, 0.82, 0.165, 1) both;
+}
+
 @keyframes glitch-effect {
     0% {
       clip: rect(841px, 1920px, 227px, 0);
@@ -104,11 +109,6 @@ html, body {
         clip: rect(0, 1920px, 1068px, 0);
     }
   }
-
-.television_lain {
-  margin: auto;
-  animation: shrinkAndFade 4s cubic-bezier(0.075, 0.82, 0.165, 1) both;
-}
 
 @keyframes shrinkAndFade {
   0% {
